@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">CC_Food</string>
+    <string name="app_name">Food Yum</string>
+    <string name="title_home">Home</string>
+    <string name="title_daily_meal">Daily Meal</string>
+    <string name="title_favourite">Favourite</string>
+    <string name="title_acc">Account</string>
+
+
+    <string name="title_cart">Cart</string>
+    <string name="resiter">Resiter</string>
+    <string name="sing_in">Sing In</string>
+    <string name="ok">Resiter</string>
+    <string name="email">Email</string>
+    <string name="my_food_app">Food Yum</string>
+    <string name="welcome_explore_your_dream_food">Welcome Explore Your Dream Food</string>
+    <string name="Sing_in">Sing In</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="setting">Setting</string>
+    <string name="my_cart">My Cart</string>
+    <string name="_10_weekend_delicious_n_dinner_recipes">10 Weekend Delicious \n Dinner Recipes</string>
+    <string name="view_more">View more</string>
+    <string name="your_favorite_and_testy_food_is_here">Your favorite and testy food is here</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="order_pay">Hoá Đơn</string>
 </resources>

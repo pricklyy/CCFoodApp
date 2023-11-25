@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.cc_food.ui.home.HomeFragmentNew"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home_new" />
+
+    <fragment
+        android:id="@+id/navigation_daily_meal"
+        android:name="com.example.cc_food.ui.daily_meal.DailyMealFragment"
+        android:label="@string/title_daily_meal"
+        tools:layout="@layout/fragment_daily_meal" />
+
+    <fragment
+        android:id="@+id/navigation_favourite"
+        android:name="com.example.cc_food.ui.favourite.FavouriteFragment"
+        android:label="@string/title_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.cc_food.ui.account.AccountManagerFragment"
+        android:label="@string/title_acc"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/navigation_my_cart"
+        android:name="com.example.cc_food.ui.cart.CartFragment"
+        android:label="@string/my_cart"
+        tools:layout="@layout/fragment_cart" />
+</navigation>

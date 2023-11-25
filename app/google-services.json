@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "537021373885",
+    "project_id": "duan1-1ad39",
+    "storage_bucket": "duan1-1ad39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537021373885:android:fa8090e0db8272c3da06d4",
+        "android_client_info": {
+          "package_name": "com.example.cc_food"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu8ATEY-Bpsm2J22eaFgE7jxdlSgUMk68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
