@@ -59,6 +59,9 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.view
         String path = recommendDAO.getUriImg(list.get(position).getTitle());
         holder.imgAdd.setImageResource(list.get(position).getImg());
 
+
+//        int drawalbeResourceId = holder.itemView.getContext().getResources().getIdentifier(String.valueOf(list.get(position).getImg()),"drawable",holder.itemView.getContext().getPackageName());
+//        Glide.with(holder.itemView.getContext()).load(drawalbeResourceId).into(holder.img);
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
