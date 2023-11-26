@@ -12,7 +12,7 @@
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/background3" />
+            android:src="@drawable/background1" />
 
         <LinearLayout
             android:layout_width="match_parent"
