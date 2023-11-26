@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:foreground="@drawable/foreground_bg"
             android:scaleType="centerCrop"
-            android:src="@drawable/ancongnghe"
+            android:src="@drawable/background1"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -35,7 +35,7 @@
             android:fontFamily="@font/amita"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="-------FOOD YUM-------"
+            android:text="-------CC FOOD-------"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"

@@ -108,7 +108,7 @@ public class FeaturedVerAdapter extends RecyclerView.Adapter<FeaturedVerAdapter.
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvTitleRecommended);
             tvPrice = itemView.findViewById(R.id.tvPrice);
-            img = itemView.findViewById(R.id.imgRecommended);
+            img = itemView.findViewById(R.id.imgRecommended1);
             imgAdd = itemView.findViewById(R.id.imgAdd);
 
         }

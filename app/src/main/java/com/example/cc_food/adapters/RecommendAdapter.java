@@ -22,6 +22,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.Glide;
 import com.example.cc_food.DAO.RecommendDAO;
 import com.example.cc_food.R;
 import com.example.cc_food.activities.ShowDetailActivity;
@@ -57,6 +58,10 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.view
         recommendDAO = new RecommendDAO(context);
         String path = recommendDAO.getUriImg(list.get(position).getTitle());
         holder.imgAdd.setImageResource(list.get(position).getImg());
+
+
+//        int drawalbeResourceId = holder.itemView.getContext().getResources().getIdentifier(String.valueOf(list.get(position).getImg()),"drawable",holder.itemView.getContext().getPackageName());
+//        Glide.with(holder.itemView.getContext()).load(drawalbeResourceId).into(holder.img);
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,6 +80,7 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.view
 
                 dialog.getWindow().setAttributes(lp);
                 dialog.show();
+
             }
         });
         try {
@@ -118,7 +124,7 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.view
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvTitleRecommended);
             tvPrice = itemView.findViewById(R.id.tvPrice);
-            img = itemView.findViewById(R.id.imgRecommended);
+            img = itemView.findViewById(R.id.imgRecommended1);
             imgAdd = itemView.findViewById(R.id.imgAdd);
 
 

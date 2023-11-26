@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:foreground="@drawable/foreground_bg"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg4"
+        android:src="@drawable/background3"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="40dp" />
 
