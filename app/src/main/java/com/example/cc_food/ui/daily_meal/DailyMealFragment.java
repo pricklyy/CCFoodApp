@@ -31,11 +31,11 @@ public class DailyMealFragment extends Fragment {
         recyclerView = root.findViewById(R.id.daily_meal_rec);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         dailyMealModules = new ArrayList<>();
-        dailyMealModules.add(new DailyMealModule(R.drawable.breakfast, "Breakfast", "30% OFF", "Description Description", "breakfast"));
-        dailyMealModules.add(new DailyMealModule(R.drawable.lunch, "Lunch", "20% OFF", "Description Description", "lunch"));
-        dailyMealModules.add(new DailyMealModule(R.drawable.dinner, "Dinner", "50% OFF", "Description Description", "dinner"));
-        dailyMealModules.add(new DailyMealModule(R.drawable.sweets, "Sweets", "25% OFF", "Description Description", "sweets"));
-        dailyMealModules.add(new DailyMealModule(R.drawable.coffee, "Coffee", "10% OFF", "Description Description", "coffee"));
+        dailyMealModules.add(new DailyMealModule(R.drawable.breakfast, "Breakfast", "30% OFF", "Bữa sáng ngon lành", "breakfast"));
+        dailyMealModules.add(new DailyMealModule(R.drawable.lunch, "Lunch", "20% OFF", "Bữa trưa thú vị", "lunch"));
+        dailyMealModules.add(new DailyMealModule(R.drawable.dinner, "Dinner", "50% OFF", "Bữa tối đậm đà", "dinner"));
+        dailyMealModules.add(new DailyMealModule(R.drawable.sweets, "Sweets", "25% OFF", "Thêm kẹo thêm ngọt", "sweets"));
+        dailyMealModules.add(new DailyMealModule(R.drawable.coffee, "Coffee", "10% OFF", "Làm cốc cà phê", "coffee"));
 
         dailyMealAdapter = new DailyMealAdapter(getContext(), dailyMealModules);
         recyclerView.setAdapter(dailyMealAdapter);

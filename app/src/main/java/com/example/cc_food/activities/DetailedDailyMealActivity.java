@@ -46,11 +46,11 @@ public class DetailedDailyMealActivity extends AppCompatActivity {
             detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 4", "description", "4.9", "30", "6:00 to 9:00"));
             detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 5", "description", "4.9", "30", "6:00 to 9:00"));
 
-            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav1, "Breakfast 1", "description", "4.6", "20", "6:00 to 9:00"));
-            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav2, "Breakfast 2", "description", "4.4", "40", "6:00 to 9:00"));
-            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 3", "description", "4.9", "30", "6:00 to 9:00"));
-            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 4", "description", "4.9", "30", "6:00 to 9:00"));
-            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 5", "description", "4.9", "30", "6:00 to 9:00"));
+            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav1, "Breakfast 6", "description", "4.6", "20", "6:00 to 9:00"));
+            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav2, "Breakfast 7", "description", "4.4", "40", "6:00 to 9:00"));
+            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 8", "description", "4.9", "30", "6:00 to 9:00"));
+            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 9", "description", "4.9", "30", "6:00 to 9:00"));
+            detailerDailyModuleList.add(new DetailerDailyModule(R.drawable.fav3, "Breakfast 10", "description", "4.9", "30", "6:00 to 9:00"));
             dailyAdapter.notifyDataSetChanged();
         }
 

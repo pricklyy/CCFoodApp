@@ -56,6 +56,10 @@ public class DetailerDailyAdapter extends RecyclerView.Adapter<DetailerDailyAdap
                 bundle.putInt("image", list.get(position).getImage());
                 bundle.putDouble("price", Double.parseDouble(list.get(position).getPrice()));
                 bundle.putString("title", list.get(position).getName());
+                bundle.putString("description",list.get(position).getDescription());
+                bundle.putString("rating",list.get(position).getRating());
+                bundle.putString("timing",list.get(position).getTiming());
+                bundle.putString("calories",list.get(position).getCalories());
                 intent1.putExtra("data", bundle);
                 context.startActivity(intent1);
             }
