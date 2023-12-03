@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/amarante"
+
                 android:text="Tổng Doanh Thu"
                 android:textColor="@color/white"
                 android:textSize="15sp"
@@ -142,7 +142,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/amarante"
                 android:text="A Month"
                 android:textColor="@color/white"
                 android:textSize="15sp"
