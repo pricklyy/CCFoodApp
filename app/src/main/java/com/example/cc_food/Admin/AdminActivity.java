@@ -14,12 +14,14 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.example.cc_food.R;
 import com.example.cc_food.activities.Bill_detail_paid;
 import com.example.cc_food.activities.Billdetail_activity;
+import com.example.cc_food.activities.FavouriteActivity;
 import com.example.cc_food.activities.ListUserActivity;
 import com.example.cc_food.activities.LoginActivity;
 import com.example.cc_food.activities.ProductHiddenActivity;
 import com.example.cc_food.adapters.Billdetail_paid_Adapter;
 import com.example.cc_food.modules.billdetail_paid_model;
 
+import com.example.cc_food.ui.account.AccountManagerFragment;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -119,7 +121,7 @@ public class AdminActivity extends AppCompatActivity {
         imgLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this , LoginActivity.class);
+                Intent intent = new Intent(AdminActivity.this , AccountManagerFragment.class);
                 startActivity(intent);
 
             }

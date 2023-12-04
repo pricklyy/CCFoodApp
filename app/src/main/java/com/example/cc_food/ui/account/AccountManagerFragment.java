@@ -31,6 +31,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 
+import com.example.cc_food.Admin.AdminActivity;
 import com.example.cc_food.DAO.UsersDAO;
 import com.example.cc_food.R;
 import com.example.cc_food.activities.DealsActivity;
@@ -43,10 +44,11 @@ import com.example.cc_food.modules.UsersModule;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Locale;
 
 
 public class AccountManagerFragment extends Fragment {
-    LinearLayout logout, btnDeals, setting, btnRating, orderHistory, oder_favourite;
+    LinearLayout logout, btnDeals, setting, btnRating, orderHistory, oder_favourite ,btnThongke;
     TextView tvNameUser, tvEmail;
     ImageView imgProfile;
     String realPath = "";
@@ -120,6 +122,8 @@ public class AccountManagerFragment extends Fragment {
         }
     });
 
+
+
     @SuppressLint("MissingInflatedId")
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -131,6 +135,14 @@ public class AccountManagerFragment extends Fragment {
         btnRating = root.findViewById(R.id.btn_Account_rating);
         oder_favourite = root.findViewById(R.id.oder_favourite);
         orderHistory = root.findViewById(R.id.order_history);
+        btnThongke=root.findViewById(R.id.btn_Thongke);
+
+       btnThongke.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               view.getContext().startActivity(new Intent(getContext(), AdminActivity.class));
+           }
+       });
         oder_favourite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -274,5 +286,8 @@ public class AccountManagerFragment extends Fragment {
         String email = pref.getString("EMAIL", "");
         getSetOtherData(email);
     }
+
+
+
 }
 
