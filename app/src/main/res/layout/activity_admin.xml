@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:foreground="@drawable/foreground_bg"
             android:scaleType="centerCrop"
-            android:src="@drawable/ancongnghe"
+            android:src="@drawable/background1"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -32,10 +32,11 @@
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
-            android:fontFamily="@font/amita"
+
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="-------FOOD YUM-------"
+            android:text="CC FOOD"
+            android:gravity="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -69,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/amarante"
+
                 android:text="Số Lượng Tài Khoản"
                 android:textColor="@color/white"
                 android:textSize="15sp"
@@ -81,7 +82,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/amarante"
                 android:text="A Month"
                 android:textColor="@color/white"
                 android:textSize="15sp"
@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/amarante"
+
                 android:text="Tổng Doanh Thu"
                 android:textColor="@color/white"
                 android:textSize="15sp"
@@ -142,7 +142,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/amarante"
                 android:text="A Month"
                 android:textColor="@color/white"
                 android:textSize="15sp"

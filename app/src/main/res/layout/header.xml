@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="180dp"
-    android:background="@drawable/bg2"
+    android:background="@drawable/background3"
     android:orientation="vertical">
 
     <ImageView
@@ -18,8 +18,8 @@
         android:layout_marginTop="97dp"
         android:paddingLeft="10dp"
         android:paddingTop="11dp"
-        android:text="Chào mừng bạn"
-        android:textColor="#976B67"
+        android:text="Welcome !!!"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
 

@@ -21,7 +21,9 @@ import com.example.cc_food.activities.ProductHiddenActivity;
 import com.example.cc_food.adapters.Billdetail_paid_Adapter;
 import com.example.cc_food.modules.billdetail_paid_model;
 
+cuongtlph27535
 import com.example.cc_food.ui.account.AccountManagerFragment;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,9 +37,9 @@ public class AdminActivity extends AppCompatActivity {
     TextView txtsoluongtruycaptrang , txtsoluongdonhangdaban , txtdoanhthucuahang;
     ConstraintLayout constraintLayout , constraintLayout1 ,constraintLayout2 , constraintLayout3;
     ImageView imgLogout;
-//    PieChart pieChart1 ;
-//    List<PieEntry> list = new ArrayList<>();
-//    List<PieEntry> list2 = new ArrayList<>();
+    PieChart pieChart1 ;
+    List<PieEntry> list = new ArrayList<>();
+    List<PieEntry> list2 = new ArrayList<>();
     Intent intent;
     Bundle bundle ;
     ArrayList<billdetail_paid_model> list1 = new ArrayList<>();
@@ -51,7 +53,7 @@ public class AdminActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
-        //pieChart1 = findViewById(R.id.piechartok);
+        pieChart1 = findViewById(R.id.piechartok);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
         DatabaseReference reference = database.getReference("soluongtaikhoan");
@@ -60,7 +62,7 @@ public class AdminActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 value = snapshot.getValue(Integer.class);
                 txtsoluongtruycaptrang.setText(String.valueOf(value));
-               // list.add(new PieEntry(value, "số luong tai khoan"));
+                list.add(new PieEntry(value, "số luong tai khoan"));
                 setupChart();
             }
 
@@ -77,7 +79,7 @@ public class AdminActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 i = snapshot.getValue(Integer.class);
                 txtsoluongdonhangdaban.setText(String.valueOf(i));
-               // list.add(new PieEntry(i, "đơn hàng đã bán"));
+                list.add(new PieEntry(i, "đơn hàng đã bán"));
                 setupChart();
             }
 
@@ -154,16 +156,16 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     private void setupChart() {
-//        PieDataSet pieDataSet = new PieDataSet(list , "Pie Chart");
-//        PieData pieData = new PieData(pieDataSet);
-//        pieDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
-//        pieDataSet.setValueTextColor(getResources().getColor(R.color.white));
-//        pieData.setValueTextSize(15f);
-//        pieChart1.setCenterText("Thống Kê");
-//        pieChart1.getDescription().setEnabled(false);
-//        pieChart1.animateY(5000 , Easing.EaseInOutQuad);
-//        pieChart1.setData(pieData);
-//        pieChart1.invalidate();
+        PieDataSet pieDataSet = new PieDataSet(list , "Pie Chart");
+        PieData pieData = new PieData(pieDataSet);
+        pieDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+        pieDataSet.setValueTextColor(getResources().getColor(R.color.white));
+        pieData.setValueTextSize(15f);
+        pieChart1.setCenterText("Thống Kê");
+        pieChart1.getDescription().setEnabled(false);
+        pieChart1.animateY(5000 , Easing.EaseInOutQuad);
+        pieChart1.setData(pieData);
+        pieChart1.invalidate();
     }
     private void setValue() {
 

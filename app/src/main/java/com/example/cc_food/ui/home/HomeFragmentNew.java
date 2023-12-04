@@ -346,7 +346,7 @@ public class HomeFragmentNew extends Fragment {
             item.calo = 65.8;
             item.rate = 4.7;
             item.timeDelay = "15";
-            item.description = "Pizza abc";
+            item.description = "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese";
             item.quantity_sold = 0;
             item.location = mLocation;
 

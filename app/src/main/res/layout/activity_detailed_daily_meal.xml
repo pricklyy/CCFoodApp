@@ -17,16 +17,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
+
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
-            app:title="Daily Meals">
+            app:title="Daily Meals"
+            app:expandedTitleTextColor="@color/white">
 
             <ImageView
                 android:id="@+id/detailer_img"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/breakfast"/>
+                android:src="@drawable/background3"/>
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -49,16 +51,4 @@
             android:layout_height="wrap_content"/>
 
     </androidx.core.widget.NestedScrollView>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/iconshop"
-        android:backgroundTint="#ED4848"
-        android:baselineAlignBottom="false"
-        app:fabSize="normal"
-        app:layout_anchorGravity="end|bottom"
-        app:tint="@null"
-        app:layout_anchor="@id/appBar"
-        android:layout_marginRight="20dp"
-        android:clickable="true"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

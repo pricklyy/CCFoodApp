@@ -8,6 +8,16 @@ public class DetailerDailyModule {
     String price;
     String timing;
 
+    String calories;
+
+    public String getCalories() {
+        return calories;
+    }
+
+    public void setCalories(String calories) {
+        this.calories = calories;
+    }
+
     public DetailerDailyModule(int image, String name, String description, String rating, String price, String timing) {
         this.image = image;
         this.name = name;
