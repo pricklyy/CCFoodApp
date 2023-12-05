@@ -156,7 +156,37 @@ public class AccountManagerFragment extends Fragment {
         tvNameUser = root.findViewById(R.id.tvNameUser);
         tvEmail = root.findViewById(R.id.tvEmail);
         SharedPreferences pref = getActivity().getSharedPreferences("USER_FILE", MODE_PRIVATE);
+
         String email = pref.getString("EMAIL", "");
+        int begin_index = email.indexOf("@");
+        int end_index = email.indexOf(".");
+        String domain_name = email.substring(begin_index + 1, end_index);
+        if (domain_name.toLowerCase(Locale.ROOT).equals("gmail")) {
+
+            oder_favourite.setVisibility(View.VISIBLE);
+            orderHistory.setVisibility(View.VISIBLE);
+            btnRating.setVisibility(View.VISIBLE);
+
+//           if (holder.btnThongke != null) {
+//               // Gọi phương thức setVisibility
+//                holder.btnThongke.setVisibility(View.VISIBLE); // hoặc View.GONE hoặc View.INVISIBLE
+//           }
+        }
+        String emailadmin = pref.getString("EMAIL", "");
+        int begin_index1 = emailadmin.indexOf("@");
+        int end_index1 = emailadmin.indexOf(".");
+        String domain_name1 = emailadmin.substring(begin_index + 1, end_index);
+        if (domain_name.toLowerCase(Locale.ROOT).equals("merchant")) {
+            btnThongke.setVisibility(View.VISIBLE);
+//            oder_favourite.setVisibility(View.GONE);
+//            orderHistory.setVisibility(View.GONE);
+//            btnRating.setVisibility(View.GONE);
+
+//           if (holder.btnThongke != null) {
+//               // Gọi phương thức setVisibility
+//                holder.btnThongke.setVisibility(View.VISIBLE); // hoặc View.GONE hoặc View.INVISIBLE
+//           }
+        }
         tvEmail.setText(email);
         orderHistory.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,13 +17,20 @@ import com.example.cc_food.activities.Billdetail_activity;
 import com.example.cc_food.activities.FavouriteActivity;
 import com.example.cc_food.activities.ListUserActivity;
 import com.example.cc_food.activities.LoginActivity;
+import com.example.cc_food.activities.MainActivity;
 import com.example.cc_food.activities.ProductHiddenActivity;
 import com.example.cc_food.adapters.Billdetail_paid_Adapter;
 import com.example.cc_food.modules.billdetail_paid_model;
 
-cuongtlph27535
+
 import com.example.cc_food.ui.account.AccountManagerFragment;
 
+import com.github.mikephil.charting.animation.Easing;
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.utils.ColorTemplate;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -123,8 +130,8 @@ public class AdminActivity extends AppCompatActivity {
         imgLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this , AccountManagerFragment.class);
-                startActivity(intent);
+                Intent intent = new Intent(AdminActivity.this , MainActivity.class);
+               startActivity(intent);
 
             }
         });
@@ -154,6 +161,7 @@ public class AdminActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void setupChart() {
         PieDataSet pieDataSet = new PieDataSet(list , "Pie Chart");

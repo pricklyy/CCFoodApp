@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,11 +69,11 @@ public class ItemProductAdapter extends RecyclerView.Adapter<ItemProductAdapter.
         String domain_name = email.substring(begin_index + 1, end_index);
         if (domain_name.toLowerCase(Locale.ROOT).equals("merchant")) {
             holder.imgDelete.setVisibility(View.VISIBLE);
-           // holder.btnThongke.setVisibility(View.VISIBLE);
-           if (holder.btnThongke != null) {
-               // Gọi phương thức setVisibility
-                holder.btnThongke.setVisibility(View.VISIBLE); // hoặc View.GONE hoặc View.INVISIBLE
-           }
+
+//           if (holder.btnThongke != null) {
+//               // Gọi phương thức setVisibility
+//                holder.btnThongke.setVisibility(View.VISIBLE); // hoặc View.GONE hoặc View.INVISIBLE
+//           }
         }
 
 
@@ -173,7 +174,7 @@ public class ItemProductAdapter extends RecyclerView.Adapter<ItemProductAdapter.
     public class viewHolder extends RecyclerView.ViewHolder {
         TextView tvTitle, tvPrice;
         ImageView img, imgAdd, imgDelete, imgFavourite;
-        Button btnThongke;
+       LinearLayout btnThongke;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
