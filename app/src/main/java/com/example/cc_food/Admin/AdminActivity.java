@@ -17,6 +17,7 @@ import com.example.cc_food.activities.Billdetail_activity;
 import com.example.cc_food.activities.FavouriteActivity;
 import com.example.cc_food.activities.ListUserActivity;
 import com.example.cc_food.activities.LoginActivity;
+import com.example.cc_food.activities.MainActivity;
 import com.example.cc_food.activities.ProductHiddenActivity;
 import com.example.cc_food.adapters.Billdetail_paid_Adapter;
 import com.example.cc_food.modules.billdetail_paid_model;
@@ -129,8 +130,8 @@ public class AdminActivity extends AppCompatActivity {
         imgLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this , AccountManagerFragment.class);
-                startActivity(intent);
+                Intent intent = new Intent(AdminActivity.this , MainActivity.class);
+               startActivity(intent);
 
             }
         });
@@ -160,6 +161,7 @@ public class AdminActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void setupChart() {
         PieDataSet pieDataSet = new PieDataSet(list , "Pie Chart");
