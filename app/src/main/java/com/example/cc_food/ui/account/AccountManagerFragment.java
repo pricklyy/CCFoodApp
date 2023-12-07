@@ -5,6 +5,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.ClipData;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -49,6 +50,8 @@ import java.util.Locale;
 
 public class AccountManagerFragment extends Fragment {
     LinearLayout logout, btnDeals, setting, btnRating, orderHistory, oder_favourite ,btnThongke;
+
+    ClipData.Item myCart;
     TextView tvNameUser, tvEmail;
     ImageView imgProfile;
     String realPath = "";
@@ -136,6 +139,8 @@ public class AccountManagerFragment extends Fragment {
         oder_favourite = root.findViewById(R.id.oder_favourite);
         orderHistory = root.findViewById(R.id.order_history);
         btnThongke=root.findViewById(R.id.btn_Thongke);
+
+
 
        btnThongke.setOnClickListener(new View.OnClickListener() {
            @Override
