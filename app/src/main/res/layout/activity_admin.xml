@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:foreground="@drawable/foreground_bg"
             android:scaleType="centerCrop"
-            android:src="@drawable/ancongnghe"
+            android:src="@drawable/bg1"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
 
