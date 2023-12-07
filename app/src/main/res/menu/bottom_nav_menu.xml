@@ -12,10 +12,11 @@
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_daily_meal" />
     <item
-        app:showAsAction="never"
+
         android:id="@+id/navigation_my_cart"
         android:title="@string/my_cart"
         android:icon="@drawable/cart_white"
+
          />
 
     <item
